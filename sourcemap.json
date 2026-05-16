@@ -1,0 +1,1 @@
+{"name":"encodingTechniques","className":"ModuleScript","filePaths":["src/__index.luau","default.project.json"],"children":[{"name":"libs","className":"Folder","children":[{"name":"xor","className":"ModuleScript","filePaths":["src/libs/xor.luau"]},{"name":"base64","className":"ModuleScript","filePaths":["src/libs/base64.luau"]}]}]}
