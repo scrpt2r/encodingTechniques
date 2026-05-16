@@ -52,7 +52,7 @@ function base64.decode(b64: string)
 	local result = {}
 	local i = 1
 
-	while 1 <= #b64 do
+	while i <= #b64 do
 		local c1 = lookup[string.sub(b64, i, i)]
 		local c2 = lookup[string.sub(b64, i + 1, i + 1)]
 

@@ -1,11 +1,11 @@
 --[[
 	******************************************************************************
-	* @file		  : ...encodingTechiques.luau
-	* @author	  : scrpt2r
-	* @date		  : May 16 2026
-	* @lastEdit	: May 16 2026 16:43
-	* @brief	  : Collection of encoding and bitwise techniques.
-	* @version	: 1.0.0
+	* @file		  	: ...encodingTechiques.luau
+	* @author	  	: scrpt2r
+	* @date		  	: May 16 2026
+	* @lastEdit		: May 16 2026 16:43
+	* @brief	  	: Collection of encoding and bitwise techniques.
+	* @version		: 1.0.1
 	******************************************************************************
 	* @attention
 	*
