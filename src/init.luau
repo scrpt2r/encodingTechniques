@@ -1,6 +1,5 @@
 --!native
 --!optimize 2
-local base64 = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.ProjectRoot.libs.base64)
 
 --[[
 	******************************************************************************
