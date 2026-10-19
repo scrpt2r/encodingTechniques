@@ -6,9 +6,9 @@
 	* @file		  	: ...encodingTechiques.luau
 	* @author	  	: scrpt2r
 	* @date		  	: May 16 2026
-	* @lastEdit		: May 16 2026 22:11
+	* @lastEdit		: October 19 2026 23:49
 	* @brief	  	: Collection of encoding and bitwise techniques.
-	* @version		: 1.0.1
+	* @version		: 1.2.0
 	******************************************************************************
 	* @attention
 	*
