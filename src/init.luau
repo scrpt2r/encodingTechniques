@@ -1,5 +1,6 @@
 --!native
 --!optimize 2
+local base64 = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.ProjectRoot.libs.base64)
 
 --[[
 	******************************************************************************
@@ -25,4 +26,5 @@
 return {
 	xor = require(script.libs.xor),
 	base64 = require(script.libs.base64),
+	base64Buffer = require(script.libs.base64Buffer)
 }
