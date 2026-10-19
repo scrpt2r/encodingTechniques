@@ -1,5 +1,5 @@
---// Lib Decleration
-local xor = {}
+--!native
+--!optimize 2
 
 --// Lib Private Functions
 function repeatKey(text: string, key: string)
@@ -31,10 +31,7 @@ function process(text: string, key: string)
 end
 
 --// Lib Public Functions
-function xor.encodeHex(text: string, key: string)
-	assert(type(text) == "string", "text must be a string.")
-	assert(type(key) == "string" and #key > 0, "key must be a non-empty string")
-
+function encodeHex(text: string, key: string)
 	local fullKey = repeatKey(text, key)
 	local result = ""
 
@@ -46,10 +43,7 @@ function xor.encodeHex(text: string, key: string)
 	return result
 end
 
-function xor.decodeHex(hexText: string, key: string)
-	assert(type(hexText) == "string" and #hexText % 2 == 0, "invalid hex string")
-	assert(type(key) == "string" and #key > 0, "key must be a non-empty string")
-
+function decodeHex(hexText: string, key: string)
 	local bytes = ""
 
 	for i = 1, #hexText, 2 do
@@ -68,18 +62,10 @@ function xor.decodeHex(hexText: string, key: string)
 	return result
 end
 
-function xor.encodeText(text: string, key: string)
-	assert(type(text) == "string", "text must be a string.")
-	assert(type(key) == "string" and #key > 0, "key must be a non-empty string")
-
-	return process(text, key)
-end
-
-function xor.decodeText(text: string, key: string)
-	assert(type(text) == "string", "text must be a string.")
-	assert(type(key) == "string" and #key > 0, "key must be a non-empty string")
-
-	return process(text, key)
-end
-
-return xor
+--// Lib Decleration
+return {
+    encodeHex = encodeHex,
+    decodeHex = decodeHex,
+    encodeText = process,
+    decodeText = process
+}
